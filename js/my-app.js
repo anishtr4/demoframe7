@@ -3,7 +3,7 @@ var myApp = new Framework7({
 });
 var $$ = Dom7;
 var mainView = myApp.addView('.view-main', {
-    dynamicNavbar: true,
+    dynamicNavbar: false,
     domCache: true
 });
 $$('.ac-5').on('click', function() {
