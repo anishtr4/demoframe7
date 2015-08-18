@@ -61,7 +61,8 @@ var app = {
 /*
     Connects if not connected, and disconnects if connected:
 */
-    manageConnection: function() {
+    manageConnection: function(macaddress) {
+		
 
         // connect() will get called only if isConnected() (below)
         // returns failure. In other words, if not connected, then connect:
@@ -161,7 +162,7 @@ sendzero: function() {
             label = document.createTextNode(message);     // create the label
 
 		var newPageContent = '<li>' +
-                        '<a href="#" class="item-link item-content">' +
+   '<a href="#" class="item-link item-content" onclick="app.manageConnection('+message.address+');">' +
                           ' <div class="item-inner">'+message.name+'' +
                         '</div>' +
 						' </li>' +
