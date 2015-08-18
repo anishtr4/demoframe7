@@ -61,8 +61,8 @@ var app = {
 /*
     Connects if not connected, and disconnects if connected:
 */
-    manageConnection: function(macaddress) {
-		alert(macaddress);
+    manageConnection: function(macAddress) {
+		alert(macAddress);
 
         // connect() will get called only if isConnected() (below)
         // returns failure. In other words, if not connected, then connect:
