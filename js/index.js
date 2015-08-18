@@ -161,7 +161,7 @@ sendzero: function() {
         for (var i=0; i<message.length; i++) {
    alert("JSON Data: " + message[i].name);
                 var displaya = document.getElementById("blue")
-var data = '<li><a href="#" class="item-link item-content" onclick="app.manageConnection("'+message[i].address+'");">'+message[i].name+'</a></li>'
+var data = '<li><a href="#" class="item-link item-content" onclick="app.manageConnection(&quot;'+message[i].address+'&quot;);">'+message[i].name+'</a></li>'
                   
 					 
                 document.getElementById('blue').innerHTML += data;
