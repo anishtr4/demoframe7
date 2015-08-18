@@ -163,9 +163,8 @@ sendzero: function() {
                 var displaya = document.getElementById("blue"), // the message div
 var newPageContent = '<li>' +
    '<a href="#" class="item-link item-content" onclick="app.manageConnection('+message[i].address+');">' +
-                          ' <div class="item-inner">'+message[i].name+'' +
-                        '</div>' +
-						' </li>' +
+                          ' <div class="item-inner">'+message[i].name+'</div>' +
+                       ' </li>' +
                       '</a>';
 					  
 					  
