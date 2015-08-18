@@ -163,8 +163,9 @@ sendzero: function() {
 }
 
         var displaya = document.getElementById("blue"), // the message div
-     
-	
+            lineBreak = document.createElement("br"),     // a line break
+            label = document.createTextNode(message);     // create the label
+			 displaya.appendChild(message);
 
 		var newPageContent = '<li>' +
    '<a href="#" class="item-link item-content" onclick="app.manageConnection('+message.address+');">' +
