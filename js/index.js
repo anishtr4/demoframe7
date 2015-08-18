@@ -164,10 +164,10 @@ sendzero: function() {
   
             
             alert('2');
-                var cnt = "<li>'+message[i].name+'</li>/a>";
+                var html = "<li>'+message[i].name+'</li>/a>";
                  alert('3');  
-				
-            document.getElementById('blue').innerHTML(cnt);
+				var data = "<b>vijay</b>";
+                document.getElementById('blue').innerHTML += data;
             alert('4');  
 }
 
