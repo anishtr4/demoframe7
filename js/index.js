@@ -62,7 +62,7 @@ var app = {
     Connects if not connected, and disconnects if connected:
 */
     manageConnection: function(macaddress) {
-		
+		alert(macaddress);
 
         // connect() will get called only if isConnected() (below)
         // returns failure. In other words, if not connected, then connect:
@@ -161,7 +161,7 @@ sendzero: function() {
         for (var i=0; i<message.length; i++) {
    alert("JSON Data: " + message[i].name);
                 var displaya = document.getElementById("blue")
-var data = '<li><a href="#" class="item-link item-content" onclick="app.manageConnection('+message[i].address+');">'+message[i].name+'</a></li>'
+var data = '<li><a href="#" class="item-link item-content" onclick="app.manageConnection("'+message[i].address+'");">'+message[i].name+'</a></li>'
                   
 					 
                 document.getElementById('blue').innerHTML += data;
