@@ -161,11 +161,7 @@ sendzero: function() {
         for (var i=0; i<message.length; i++) {
    alert("JSON Data: " + message[i].name);
                 var displaya = document.getElementById("blue"), // the message div
-            lineBreak = document.createElement("br"),     // a line break
-            label = document.createTextNode(message);     // create the label
-			 displaya.appendChild(message);
-
-		var newPageContent = '<li>' +
+var newPageContent = '<li>' +
    '<a href="#" class="item-link item-content" onclick="app.manageConnection('+message[i].address+');">' +
                           ' <div class="item-inner">'+message[i].name+'' +
                         '</div>' +
@@ -173,7 +169,7 @@ sendzero: function() {
                       '</a>';
 					  
 					  
-					   displaya.appendChild(newPageContent);  
+			 displaya.appendChild(newPageContent);  
 }
 
      
