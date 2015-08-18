@@ -160,8 +160,19 @@ sendzero: function() {
             lineBreak = document.createElement("br"),     // a line break
             label = document.createTextNode(message);     // create the label
 
-        display.appendChild(lineBreak);          // add a line break
-        display.appendChild(label);              // add the message node
+		var newPageContent = '<li>' +
+                        '<a href="#" class="item-link item-content">' +
+                          ' <div class="item-inner">'+message.name+'' +
+                        '</div>' +
+						' </li>' +
+                      '</a>';
+		 
+                          
+                            
+                          
+                             
+                          
+                      
     },
 /*
     clears the message div:
