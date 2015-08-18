@@ -149,6 +149,7 @@ sendzero: function() {
     appends @message to the message div:
 */
     display: function(message) {
+        alert(message);
 		myApp.alert(message, 'Error');
      
     },
