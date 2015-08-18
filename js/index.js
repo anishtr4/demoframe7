@@ -167,7 +167,7 @@ sendzero: function() {
                 var newPageContent = "<li>'+message[i].name+'</li>/a>";
                  alert('3');  
 				
-            document.getElementById('blue').appendChild(newPageContent);
+            document.getElementById('blue').innerHTML(newPageContent);
             alert('4');  
 }
 
