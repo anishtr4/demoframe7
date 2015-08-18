@@ -161,7 +161,7 @@ sendzero: function() {
         for (var i=0; i<message.length; i++) {
    alert("JSON Data: " + message[i].name);
                 var displaya = document.getElementById("blue");
-var newPageContent = '<li><a href="#" class="item-link item-content" onclick="app.manageConnection('+message[i].address+');">'+message[i].name+'</li>/a>'
+                var newPageContent = '<li><a href="#" class="item-link item-content">'+message[i].name+'</li>/a>'
                   
 					  displaya.appendChild(newPageContent);  
 }
