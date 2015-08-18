@@ -44,12 +44,12 @@ var app = {
                     app.blutoothdisplay(JSON.stringify(error));
                 }
             );
-        };
+        }
 
         // if isEnabled returns failure, this function is called:
         var notEnabled = function() {
-            app.display("Bluetooth is not enabled.");
-        };
+            app.display("Bluetooth is not enabled.")
+        }
 
          // check if Bluetooth is on:
         bluetoothSerial.isEnabled(
@@ -160,15 +160,10 @@ sendzero: function() {
     
         for (var i=0; i<message.length; i++) {
    alert("JSON Data: " + message[i].name);
-            alert('1');
+                var displaya = document.getElementById("blue");
+                var data = '<li><a href="#" class="item-link item-content">'+message[i].name+'</li>/a>'
   
-            
-            alert('2');
-                var html = "<li>'+message[i].name+'</li>/a>";
-                 alert('3');  
-				var data = "<b>vijay</b>";
                 document.getElementById('blue').innerHTML += data;
-            alert('4');  
 }
 
      
