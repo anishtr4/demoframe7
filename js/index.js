@@ -161,12 +161,13 @@ sendzero: function() {
         for (var i=0; i<message.length; i++) {
    alert("JSON Data: " + message[i].name);
             alert('1');
-                var displaya = document.getElementById("blue");
+  
             
             alert('2');
                 var newPageContent = "<li>'+message[i].name+'</li>/a>";
                  alert('3');  
-					  displaya.appendChild(newPageContent);  
+				
+            document.getElementById('blue').appendChild(newPageContent);
             alert('4');  
 }
 
