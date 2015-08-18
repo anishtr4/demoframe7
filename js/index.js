@@ -22,7 +22,7 @@ var app = {
 */
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        connectButton.addEventListener('touchend', app.manageConnection, false);
+   
         one.addEventListener('touchend', app.sendone, false);
         zero.addEventListener('touchend', app.sendzero, false);
     },
@@ -63,7 +63,9 @@ var app = {
 */
     manageConnection: function(macAddress) {
 		alert(macAddress);
-         app.macAddress == macAddress;
+        app = {
+    macAddress: macAddress,
+        }
         // connect() will get called only if isConnected() (below)
         // returns failure. In other words, if not connected, then connect:
         var connect = function () {
