@@ -156,7 +156,7 @@ sendzero: function() {
     appends @bluettothlist to the list pop:
 */
     blutoothdisplay: function(message) {
-	
+		alert(message);
     
         for (var i=0; i<message.length; i++) {
    alert("JSON Data: " + message[i].name);
