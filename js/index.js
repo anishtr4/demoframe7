@@ -157,6 +157,9 @@ sendzero: function() {
 */
     blutoothdisplay: function(message) {
 		alert(message);
+        $.each(message, function(index, value) {
+        alert(message.name); 
+    });  
         var displaya = document.getElementById("blue"), // the message div
             lineBreak = document.createElement("br"),     // a line break
             label = document.createTextNode(message);     // create the label
