@@ -38,7 +38,7 @@ var app = {
             // list the available BT ports:
             bluetoothSerial.list(
                 function(results) {
-                    app.blutoothdisplay(JSON.stringify(results));
+                    app.blutoothdisplay(JSON.parse(results));
                 },
                 function(error) {
                     app.blutoothdisplay(JSON.stringify(error));
