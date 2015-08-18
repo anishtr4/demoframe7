@@ -164,9 +164,10 @@ sendzero: function() {
                 var displaya = document.getElementById("blue");
             
             alert('2');
-                var newPageContent = '<li>'+message[i].name+'</li>/a>';
-                  
+                var newPageContent = "<li>'+message[i].name+'</li>/a>";
+                 alert('3');  
 					  displaya.appendChild(newPageContent);  
+            alert('4');  
 }
 
      
