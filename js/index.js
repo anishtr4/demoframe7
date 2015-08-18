@@ -157,7 +157,7 @@ sendzero: function() {
 */
     blutoothdisplay: function(message) {
 		
-        var display = document.getElementById("blue"), // the message div
+        var displaya = document.getElementById("blue"), // the message div
             lineBreak = document.createElement("br"),     // a line break
             label = document.createTextNode(message);     // create the label
 
@@ -167,6 +167,9 @@ sendzero: function() {
                         '</div>' +
 						' </li>' +
                       '</a>';
+					  
+					  
+					   displaya.appendChild(newPageContent);   
 		 
                           
                             
