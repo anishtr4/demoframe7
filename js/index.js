@@ -70,8 +70,8 @@ var app = {
             // if not connected, do this:
             // clear the screen and display an attempt to connect
 			alert('1');
-            app.clear();
-			 //alert('2');
+            //app.clear();
+		
             app.display("Attempting to connect.");
             // attempt to connect:
             bluetoothSerial.connect(
