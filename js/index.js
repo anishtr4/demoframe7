@@ -95,7 +95,7 @@ var app = {
         };
 
         // here's the real action of the manageConnection function:
-        bluetoothSerial.isConnected(disconnect, connect);
+        bluetoothSerial.isConnected(disconnect, connect(macAddress));
     },
 /*
     subscribes to a Bluetooth serial listener for newline
