@@ -77,7 +77,7 @@ var app = {
             // attempt to connect:
             bluetoothSerial.connect(
                 macAddress,  // device to connect to
-                app.openPort(macAddress),    // start listening if you succeed
+                app.openPort,    // start listening if you succeed
                 app.showError    // show the error if you fail
             );
 			
@@ -111,9 +111,9 @@ sendzero: function() {
     },
 
 
-    openPort: function(macAddress) {
+    openPort: function() {
         // if you get a good Bluetooth serial connection:
-        app.display("Connected to: " + macAddress);
+        app.display("Connected");
         // change the button's name:
         //connectButton.innerHTML = "Disconnect";
         // set up a listener to listen for newlines
