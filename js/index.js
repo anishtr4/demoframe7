@@ -63,9 +63,7 @@ var app = {
 */
     manageConnection: function(macAddress) {
 		alert(macAddress);
-        app = {
-    macAddress: macAddress,
-        }
+      
         // connect() will get called only if isConnected() (below)
         // returns failure. In other words, if not connected, then connect:
         var connect = function () {
