@@ -71,7 +71,7 @@ var app = {
             // clear the screen and display an attempt to connect
 			alert('1');
             app.clear();
-			alert('2');
+			 //alert('2');
             app.display("Attempting to connect.");
             // attempt to connect:
             bluetoothSerial.connect(
