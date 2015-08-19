@@ -76,7 +76,7 @@ var app = {
                 "Make sure the serial port is open on the target device.");
             // attempt to connect:
             bluetoothSerial.connect(
-                app.macAddress,  // device to connect to
+                macAddress,  // device to connect to
                 app.openPort,    // start listening if you succeed
                 app.showError    // show the error if you fail
             );
