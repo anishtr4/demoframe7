@@ -4,10 +4,10 @@
     id        = "com.krapps.BtTimer"
     version   = "0.1.0">
 
-<name>BtTimer</name>
+<name>BLUE-BOX</name>
 
 <description>
-Speech Timer with Bluetooth gateway
+connect everything with BLUE-BOX
 </description>
 
 <author href="https://geeknirvana.org" email="u.k.k.rodrigo@gmail.com">
