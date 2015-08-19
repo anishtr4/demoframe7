@@ -66,7 +66,8 @@ var app = {
       
         // connect() will get called only if isConnected() (below)
         // returns failure. In other words, if not connected, then connect:
-        var connect = function () {
+        var connect = function (macAddress) {
+			alert(macAddress);
             // if not connected, do this:
             // clear the screen and display an attempt to connect
 		
@@ -110,11 +111,11 @@ sendzero: function() {
     },
 
 
-    openPort: function() {
+    openPort: function(macAddress) {
         // if you get a good Bluetooth serial connection:
-        app.display("Connected to: " + app.macAddress);
+        app.display("Connected to: " + macAddress);
         // change the button's name:
-        connectButton.innerHTML = "Disconnect";
+        //connectButton.innerHTML = "Disconnect";
         // set up a listener to listen for newlines
         // and display any new data that's come in since
         // the last newline:
