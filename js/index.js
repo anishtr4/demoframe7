@@ -67,7 +67,7 @@ var app = {
         // connect() will get called only if isConnected() (below)
         // returns failure. In other words, if not connected, then connect:
         var connect = function (macAddress) {
-			alert(macAddress);
+			//alert(macAddress);
             // if not connected, do this:
             // clear the screen and display an attempt to connect
 		
@@ -152,8 +152,15 @@ sendzero: function() {
     appends @message to the message div:
 */
     display: function(message) {
-        
-		myApp.alert(message, 'Error');
+         
+	
+		myApp.addNotification({
+              message: message,
+              button: {
+                  text: 'close',
+                  color: 'yellow'
+              }
+          });
      
     },
 /*
@@ -163,7 +170,7 @@ sendzero: function() {
 	
     
         for (var i=0; i<message.length; i++) {
-   alert("JSON Data: " + message[i].name);
+   //alert("JSON Data: " + message[i].name);
                 var displaya = document.getElementById("blue")
 var data = '<li><a href="#" class="item-link item-content" onclick="app.manageConnection(&quot;'+message[i].address+'&quot;);">'+message[i].name+'</a></li>'
                   

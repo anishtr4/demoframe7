@@ -1,5 +1,6 @@
 var myApp = new Framework7({
-    animateNavBackIcon: true
+    animateNavBackIcon: true,
+	material: true
 });
 var $$ = Dom7;
 var mainView = myApp.addView('.view-main', {
