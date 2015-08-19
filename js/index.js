@@ -183,8 +183,8 @@ var data = '<li><a href="#" class="item-link item-content" onclick="app.manageCo
     clears the message div:
 */
     clear: function() {
-        var display = document.getElementById("message");
-        display.innerHTML = "";
+        
+        document.getElementById("message").innerHTML = "";
     }
 };      // end of app
 
