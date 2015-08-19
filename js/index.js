@@ -62,14 +62,14 @@ var app = {
     Connects if not connected, and disconnects if connected:
 */
     manageConnection: function(macAddress) {
-		alert(macAddress);
+		
       
         // connect() will get called only if isConnected() (below)
         // returns failure. In other words, if not connected, then connect:
         var connect = function () {
             // if not connected, do this:
             // clear the screen and display an attempt to connect
-			alert('1');
+		
             //app.clear();
 		
             app.display("Attempting to connect.");
@@ -79,7 +79,7 @@ var app = {
                 app.openPort,    // start listening if you succeed
                 app.showError    // show the error if you fail
             );
-			alert('3');
+			
         };
 
         // disconnect() will get called only if isConnected() (below)
@@ -101,11 +101,11 @@ var app = {
     and changes the button:
 */
 sendone: function() {
-    alert('1');
+
     bluetoothSerial.write(1);
     },
 sendzero: function() {
-    alert('0');
+    
     bluetoothSerial.write(0);
     },
 
@@ -151,7 +151,7 @@ sendzero: function() {
     appends @message to the message div:
 */
     display: function(message) {
-        alert(message);
+        
 		myApp.alert(message, 'Error');
      
     },
@@ -159,7 +159,7 @@ sendzero: function() {
     appends @bluettothlist to the list pop:
 */
     blutoothdisplay: function(message) {
-		alert(message);
+	
     
         for (var i=0; i<message.length; i++) {
    alert("JSON Data: " + message[i].name);
