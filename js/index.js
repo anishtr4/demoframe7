@@ -76,7 +76,7 @@ var app = {
             // attempt to connect:
             bluetoothSerial.connect(
                 macAddress,  // device to connect to
-                app.openPort,    // start listening if you succeed
+                app.openPort(macAddress),    // start listening if you succeed
                 app.showError    // show the error if you fail
             );
 			
@@ -119,7 +119,7 @@ sendzero: function() {
         // and display any new data that's come in since
         // the last newline:
         bluetoothSerial.subscribe('\n', function (data) {
-            app.clear();
+            //app.clear();
             app.display(data);
         });
     },
